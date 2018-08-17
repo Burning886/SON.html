@@ -142,7 +142,9 @@
          audio.currentTime = 0;
         }
 
-
+        document.addEventListener('touchstart', function() {
+            document.getElementById('music').play()
+        })
         var seedAnimate = eval(Jscex.compile("async", function () {
             seed.draw();
             while (hold) {
