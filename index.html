@@ -30,21 +30,34 @@
 			        <div id="code">
 			    
 					  <font color="#FF0000">  	
-        				<span class="say">   啦啦啦 </span><br>
-        				<span class="say">   去年冬天写的 </span><br>
-        				<span class="say">   后来不了了之 </span><br>
-        				<span class="say">   今天突然发现这个 </span><br>
-        				<span class="say">   强迫症迫使我想发给你 </span><br>
-        				<span class="say">   你是猪吗? </span><br>
-                        <span class="say">   你:"Yes,I am." </span><br>
-                        <span class="say">   good </span><br>
-                        <span class="say">   我写了什么 </span><br>
-                        <span class="say">   我也不知道 </span><br>
-                        <span class="say">   反正你是我儿子 </span><br>
-                        <span class="say">   代码作证 </span><br>
-                        <span class="say">   等它不运行时 </span><br>
-                        <span class="say">   估计世界也毁灭了 </span><br>
+        				<span class="say">   我是你爸爸我真伟大 </span><br>
+        				<span class="say">   养你这么大 </span><br>
+        				<span class="say">   你还不听话 </span><br>
+                        <span class="say">   一天到晚去玩耍 </span><br>
+        				<span class="say">   滚吧滚吧连滚带爬 </span><br>
+                        <span class="say">   我不要你这个坏娃娃 </span><br>
+                        <span class="say">   只要你妈妈只要你妈妈</span><br>
+                        <span class="say">   嘿！ </span><br>
                         <span class="say">   ๑乛◡乛๑ </span><br>
+                        <span class="say" style="color:white">   见
+惊艳
+目流连
+再难思迁
+踌躇欲向前
+只恐天上人间
+悲欢喜怒一线牵
+循环往复恨此心坚
+花开花落转眼已三年
+天人合一处垂首对漪涟
+思或淡情未移口三缄
+燕去燕归沧海桑田
+倘注定有分无缘
+亦感蒙赐初面
+纵此生不见
+平安惟愿
+若得闲
+仍念
+歉 </span><br>
         				<span class="say"><span class="space"></span></span>
         			  </font>
         </div>
@@ -138,17 +151,18 @@
 
 
         function playmusic(){
-         var audio = document.getElementById('music'); 
-         audio.currentTime = 0;
+             var audio = document.getElementById('music'); 
+             audio.currentTime = 0;
+             document.addEventListener('touchstart', function () {
+                function audioAutoPlay() {
+                    var audio = document.getElementById('audio');
+                        audio.play();
+                }
+                audioAutoPlay();
+            });
         }
 
-        document.addEventListener('touchstart', function () {
-            function audioAutoPlay() {
-                var audio = document.getElementById('audio');
-                    audio.play();
-            }
-            audioAutoPlay();
-        });
+        
         var seedAnimate = eval(Jscex.compile("async", function () {
             seed.draw();
             while (hold) {
